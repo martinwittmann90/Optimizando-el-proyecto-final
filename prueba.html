@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <body>
+    <div class="alert"></div>
+    <main id="contenido">
+      <div id="formInscripcion">
+        <h3>Formulario de inscripción</h3>
+          <label for="nombreCompleto">Nombre completo</label>
+            <input type="text" name="full-name" id="nombreCompleto" />
+          <label for="fechaNacimiento">Fecha de nacimiento</label>
+            <input type="text" name="dob" id="fechaNacimiento" />
+          <label for="email">Email</label>
+            <input type="text" name="email" id="email" />
+          <label for="telefono">Teléfono</label>
+            <input type="tel" name="phone" id="telefono" maxlength="11" />
+          <label for="curso">Curso</label>
+            <select name="cursos" id="curso" tabindex="0">
+              <option value="">Seleccione un curso</option>
+              <option value="OperadorOffice">Operador de Office</option>
+              <option value="Programacion">Programación</option>
+              <option value="DisenioGrafico">Diseño Gráfico</option>
+            </select>
+          <label for="cuotas">Cuotas</label>
+          <input type="text" name="dob" id="fechaNacimiento" />
+            <select name="cuotas" id="cuotas" tabindex="0">
+              <option value="">Seleccione las cuotas</option>
+              <option value="tres" name="3">3</option>
+              <option value="cinco" name="5">5</option>
+              <option value="doce" name="12">12</option>
+            </select>
+          <label for="paises">País</label>
+            <select name="paises" id="paises" tabindex="0">
+              <option value="">Seleccione un país</option>
+              <option value="uruguay" name="Uruguay">Uruguay</option>
+              <option value="argentina" name="Argentina">Argentina</option>
+              <option value="chile" name="Chile">Chile</option>
+          </select>
+        <br><br>
+
+        
+          <h1>Simulador del mundial</h1>
+          <form>
+            <div class="remember">
+              <label for="entername">Ingresa tu nombre:</label>
+              <input id="entername" type="text" required />
+              <input id="submitname" type="submit" value="Ingresar" />
+            </div>
+            <div class="forget">
+              <label for="forgetname"></label>
+              <input id="forgetname" type="reset" value="Cambiar usuario" />
+            </div>
+          </form>
+          <!-- GRUPO A -->
+          <h2>GRUPO A</h2>
+          <div id="grupoA">
+              <div class="partidos">
+                  <!-- PRIMERA FECHA GRUPO A-->
+                  <section class="primerafecha">
+                      <h2>Primera Fecha</h2>
+                      <div class="primerPartido">
+                      <div class="izquierdo">
+                          <figure><img src="./imagenes/catar.png" alt="escudoqatar"><figcaption>Qatar</figcaption></figure>
+                          <input type="text" name="equipoLocal1" id="equipoLocal1" data-id="1" placeholder="0">
+                          <input type="text" name="teamlocal1" id="teamlocal1" class="desaparecer" placeholder="0" readonly>
+                      </div>
+                      <div class="derecho">
+                          <figure><img src="./imagenes/ecuador.png" alt="escudoecuador"><figcaption>Ecuador</figcaption></figure>
+                          <input type="text" name="equipoVisitante1" id="equipoVisitante1" data-id="1" placeholder="0">
+                          <input type="text" name="teamvisita1" id="teamvisita1" class="desaparecer" placeholder="0" readonly>
+                      </div>
+                      </div>
+                      <div class="segundoPartido">
+                      <div class="izquierdo">
+                          <figure><img src="./imagenes/senegal.png" alt="escudosenegal"><figcaption>Senegal</figcaption></figure>
+                          <input type="text" name="equipoLocal2" id="equipoLocal2" data-id="2" placeholder="0">
+                          <input type="text" name="teamlocal2" id="teamlocal2" class="desaparecer" placeholder="0" readonly>
+                      </div>
+                      <div class="derecho">
+                          <figure><img src="./imagenes/bajos.png" alt="escudopaisesbajos"><figcaption>Paises Bajos</figcaption></figure>
+                          <input type="text" name="equipoVisitante2" id="equipoVisitante2" data-id="2" placeholder="0">
+                          <input type="text" name="teamvisita2" id="teamvisita2" class="desaparecer" placeholder="0" readonly>
+                      </div>
+                      </div>
+                  </section>
+        </main>
+
+
+
+
+
+
+
+
+        <button type="submit" id="enviar">Enviar</button>
+        <button type="submit" id="guardar">Guardar</button>
+      </div>
+      <script src="index.js"></script>
+  </body>
+</body>
+</html>
