@@ -47,7 +47,67 @@ header {
 
 /*MAIN*/
 /*PRESENTACION SITIO WEB*/
-/*PAGINA ESTADIO PARA CELULARES*/
+/*PAGINA TRABAJOS*/
+.cuerpotrabajos {
+    background-color: nth($colores,7);}
+.cuerpoimagenes {
+	margin-top: 16vh;
+	padding: 3vh 3vw;}
+.wrapper {
+	display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 0px;}
+#one {
+	grid-column: 1;
+	grid-row: 1;
+    border: solid #7585E2 1px;}
+#two {
+	grid-column:2;
+	grid-row: 1;
+    border: solid #7585E2 1px;}
+#three {
+	grid-column: 3;
+	grid-row: 1;
+    border: solid #7585E2 1px;}
+#four {
+	grid-column: 1;
+	grid-row: 2;
+    border: solid #7585E2 1px;}
+#five {
+	grid-column: 2;
+	grid-row: 2;
+    border: solid #7585E2 1px;}
+#six {
+	grid-column: 3;
+	grid-row: 2;
+    border: solid #7585E2 1px;}
+.caption__empresa {
+    color:nth($colores-fuente,1);
+    text-align: left;
+    font-family: nth($fuentes,2);
+    font-size: nth($tamaño-fuente,7);
+    padding: 0 0 0.5rem 2.5rem;}
+.caption__descripcion {
+    color:nth($colores-fuente,1);
+    text-align: left;
+    font-family: nth($fuentes,2);
+    font-size: nth($tamaño-fuente,2);
+    padding: 0 0 1rem 2.5rem;}
+.caption__referencia {
+    color:nth($colores-fuente,1);
+    text-align: left;
+    font-family: nth($fuentes,2);
+    font-size: nth($tamaño-fuente,3);
+    padding: 0 0 0rem 2.5rem;}
+main {
+    section {
+        div {
+            div {
+                img {
+                    padding: 1rem 2rem 0 2.5rem;}}}}}
+
+/*PAGINA TRABAJOS PARA CELULARES*/
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 	.wrapper {
 		display:block;
@@ -306,15 +366,3 @@ main {
         &:hover {
         background-color: nth($colores,2);
         color: nth($colores-fuente,2);}}
-table {
-    border-spacing: 0;
-    width: 100%;
-    border: 1px solid #ddd;
-    }    
-th, td {
-text-align: left;
-padding: 16px;
-}
-tr:nth-child(even) {
-background-color: #f2f2f2
-}

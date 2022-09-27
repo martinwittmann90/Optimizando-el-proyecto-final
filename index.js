@@ -1,56 +1,3 @@
-/* //RESULTADOS DEL USUARIO
-const guardarResultado1 = document.getElementById("equipoLocal1");
-const guardarResultado2 = document.getElementById("equipoVisitante1");
-const guardarResultado3 = document.getElementById("equipoLocal2");
-const guardarResultado4 = document.getElementById("equipoVisitante2");
-const guardarResultado5 = document.getElementById("equipoLocal3");
-const guardarResultado6 = document.getElementById("equipoVisitante3");
-const guardarResultado7 = document.getElementById("equipoLocal4");
-const guardarResultado8 = document.getElementById("equipoVisitante4");
-const guardarResultado9 = document.getElementById("equipoLocal5");
-const guardarResultado10 = document.getElementById("equipoVisitante5");
-const guardarResultado11 = document.getElementById("equipoLocal6");
-const guardarResultado12 = document.getElementById("equipoVisitante6");
-const guardarResultado13 = document.getElementById("equipoLocal7");
-const guardarResultado14 = document.getElementById("equipoVisitante7");
-const guardarResultado15 = document.getElementById("equipoLocal8");
-const guardarResultado16 = document.getElementById("equipoVisitante8");
-const guardarResultado17 = document.getElementById("equipoLocal9");
-const guardarResultado18 = document.getElementById("equipoVisitante9");
-const guardarResultado19 = document.getElementById("equipoLocal10");
-const guardarResultado20 = document.getElementById("equipoVisitante10");
-const guardarResultado21 = document.getElementById("equipoLocal11");
-const guardarResultado22 = document.getElementById("equipoVisitante11");
-const guardarResultado23 = document.getElementById("equipoLocal12");
-const guardarResultado24 = document.getElementById("equipoVisitante12");
-const guardarResultado25 = document.getElementById("equipoLocal13");
-const guardarResultado26 = document.getElementById("equipoVisitante13");
-const guardarResultado27 = document.getElementById("equipoLocal14");
-const guardarResultado28 = document.getElementById("equipoVisitante14");
-const guardarResultado29 = document.getElementById("equipoLocal15");
-const guardarResultado30 = document.getElementById("equipoVisitante15");
-const guardarResultado31 = document.getElementById("equipoLocal16");
-const guardarResultado32 = document.getElementById("equipoVisitante16");
-const guardarResultado33 = document.getElementById("equipoLocal17");
-const guardarResultado34 = document.getElementById("equipoVisitante17");
-const guardarResultado35 = document.getElementById("equipoLocal8");
-const guardarResultado36 = document.getElementById("equipoVisitante18"); 
-
-
-const btnResultado = document.querySelector("#enviar");
-
-btnResultado.addEventListener("click", function () {
-  localStorage.setItem("name", getName.value);
-  localStorage.setItem("Qatar 1", guardarResultado1.value)
-  localStorage.setItem("Ecuador 1", guardarResultado2.value)
-  localStorage.setItem("Senegal 1", guardarResultado3.value)
-  localStorage.setItem("Paises Bajos 1", guardarResultado4.value)
-  localStorage.setItem("Qatar 2", guardarResultado5.value)
-  localStorage.setItem("Senegal 2", guardarResultado6.value)
-  ;}
-  ); 
-
-
 const rememberMe = document.querySelector(".remember");
 const forgetMe = document.querySelector(".forget");
 const form1 = document.querySelector("form");
@@ -73,7 +20,7 @@ forgetBtn.addEventListener("click", function () {
 function nameDisplayCheck() {
   if (localStorage.getItem("name")) {
     let name = localStorage.getItem("name");
-    h1.textContent = `Bienvenido ${name}!`
+    h1.textContent = `¡Bienvenido/a ${name}!`
     forgetMe.style.display = "block";
     rememberMe.style.display = "none";
   } else {
@@ -195,7 +142,7 @@ function constructor()
         difgoltun.innerText = parseInt(golestun.innerText) - parseInt(golescontun.innerText)
         
 parseInt('') === 0 
-  });}
+  });} 
 
 
 //DECLARO DIFERENTES VARIABLES Y OBJETOS
@@ -223,9 +170,52 @@ const ecuador3 = document.getElementById("equipoLocal5");
 const senegal3 = document.getElementById("equipoVisitante5");
 const pbajos3 = document.getElementById("equipoLocal6");
 const qatar3 = document.getElementById("equipoVisitante6");
+//GRUPO B - FECHA 1
+const inglaterra1 = document.getElementById("equipoLocal7");
+const iran1 = document.getElementById("equipoVisitante7");
+const eeuu1 = document.getElementById("equipoLocal8");
+const gales1 = document.getElementById("equipoVisitante8");
+//GRUPO B - FECHA 2
+const gales2 = document.getElementById("equipoLocal9");
+const iran2 = document.getElementById("equipoVisitante9");
+const eeuu2 = document.getElementById("equipoLocal10");
+const inglaterra2 = document.getElementById("equipoVisitante10");
+//GRUPO B - FECHA 3
+const gales3 = document.getElementById("equipoLocal11");
+const inglaterra3 = document.getElementById("equipoVisitante11");
+const iran3 = document.getElementById("equipoLocal12");
+const eeuu3 = document.getElementById("equipoVisitante12");
+//GRUPO C - FECHA 1
+const argentina1 = document.getElementById("equipoLocal13");
+const arabia1 = document.getElementById("equipoVisitante13");
+const mexico1 = document.getElementById("equipoLocal14");
+const polonia1 = document.getElementById("equipoVisitante14");
+//GRUPO C - FECHA 2
+const argentina2 = document.getElementById("equipoLocal13");
+const mexico2 = document.getElementById("equipoVisitante13");
+const arabia2 = document.getElementById("equipoLocal14");
+const polonia2 = document.getElementById("equipoVisitante14");
+//GRUPO C - FECHA 3
+const argentina3 = document.getElementById("equipoLocal15");
+const polonia3 = document.getElementById("equipoVisitante15");
+const mexico3 = document.getElementById("equipoLocal16");
+const arabia3 = document.getElementById("equipoVisitante16");
+//GRUPO D - FECHA 1
+const francia1 = document.getElementById("equipoLocal13");
+const australia1 = document.getElementById("equipoVisitante13");
+const dinamarca1 = document.getElementById("equipoLocal14");
+const tunez1 = document.getElementById("equipoVisitante14");
+//GRUPO D - FECHA 2
+const tunez2 = document.getElementById("equipoLocal13");
+const australia2 = document.getElementById("equipoVisitante13");
+const francia2 = document.getElementById("equipoLocal14");
+const dinamarca2 = document.getElementById("equipoVisitante14");
+//GRUPO D - FECHA 3
+const australia3 = document.getElementById("equipoLocal15");
+const dinamarca3 = document.getElementById("equipoVisitante15");
+const tunez3 = document.getElementById("equipoLocal16");
+const francia3 = document.getElementById("equipoVisitante16");
 
-const cuotas = document.getElementById("cuotas");
-const paises = document.getElementById("paises");
 
 const btnguardo = document.getElementById("guardar");
 /* const btnenvio = document.getElementById("enviar"); */
@@ -252,8 +242,51 @@ btnguardo.addEventListener("click", (e) => {
         A3Senegal: senegal3.value,
         A3PaisesBajos: pbajos3.value,
         A3Qatar: qatar3.value,
-
-        
+        //GRUPO B - FECHA 1
+        B1Inglaterra: inglaterra1.value,
+        B1Iran: iran1.value,
+        B1EEUU: eeuu1.value,
+        B1Gales: gales1.value,
+        //GRUPO B - FECHA 2
+        B2Gales: gales2.value,
+        B2Iran: iran2.value,
+        B2EEUU: eeuu2.value,
+        B2Inglaterra: inglaterra2.value,
+        //GRUPO C - FECHA 3
+        B3Gales: gales3.value,
+        B3Inglaterra: inglaterra3.value,
+        B3Iran: iran3.value,
+        B3EEUU: eeuu3.value,  
+        //GRUPO C - FECHA 1
+        C1Agentina: argentina1.value,
+        C1ArabiaSaudita: arabia1.value,
+        C1Mexico: mexico1.value,
+        C1Polonia: polonia1.value,
+        //GRUPO C - FECHA 2
+        C2Agentina: argentina2.value,
+        C2Mexico: mexico2.value,
+        C2ArabiaSaudita: arabia2.value,
+        C2Polonia: polonia2.value,
+        //GRUPO C - FECHA 3
+        B3Agentina: argentina3.value,
+        B3Polonia: polonia3.value,
+        B3Mexico: mexico3.value,
+        B3ArabiaSaudita: arabia3.value,
+        //GRUPO D - FECHA 1
+        D1Francia: francia1.value,
+        D1Australia: australia1.value,
+        D1Dinamarca: dinamarca1.value,
+        D1Tunez: tunez1.value,
+        //GRUPO D - FECHA 2
+        D2Tunez: tunez2.value,
+        D2Australia: australia2.value,
+        D2Francia: francia2.value,
+        D2Dinamarca: dinamarca2.value,
+        //GRUPO D - FECHA 3
+        D3Australia: australia3.value,
+        D3Dinamarca: dinamarca3.value,
+        D3Tunez: tunez3.value,
+        D3Francia: francia3.value, 
     };
 
     datosFormulario.push(DatosFinales);
@@ -262,26 +295,11 @@ btnguardo.addEventListener("click", (e) => {
 
 });
 
-/* //SE CREA EL EVENTO DEL BOTÓN ENVIAR, GUARDANDO LOS DATOS EN LOCAL STORAGE Y ENVIANDO LOS DATOS POR CORREO ELECTRONICO
+/* //EVENTO DEL BOTÓN ENVIAR
 
     btnenvio.addEventListener('click', (event) => {
         event.preventDefault();
 
-        if (curso.value === "opOffice") {
-            precioCurso = 20000;
-        } else if (curso.value === "prog") {
-            precioCurso = 21100;
-        } else {
-            precioCurso = 25200;
-        }
-    
-        if (cuotas.value === "tres") {
-            precioCuotas = precioCurso / 3;
-        } else if (cuotas.value === "cinco") {
-            precioCuotas = precioCurso / 5;
-        } else {
-            precioCuotas = precioCurso / 12;
-        }
         
     const DatosFinales = {
         nombre: nombreCompleto.value,
@@ -300,9 +318,9 @@ btnguardo.addEventListener("click", (e) => {
     localStorage.setItem("valores_de_input", JSON.stringify(datosFormulario)); 
 
         let params = {
-            user_id: 'SAaxbiXrUyQfe-Br7',
-            service_id: 'service_ot5g91i',
-            template_id: 'template_szd70mr',
+            public_key: 'KGXHxfAUgsoEayl8K',
+            service_id: 'service_r0db0vd',
+            template_id: 'template_kl38lkg',
             template_params: {
                 to_email: email.value,
                 from_name: "Formulario",
