@@ -216,11 +216,8 @@ const dinamarca3 = document.getElementById("equipoVisitante15");
 const tunez3 = document.getElementById("equipoLocal16");
 const francia3 = document.getElementById("equipoVisitante16");
 
-
+const btnenvio = document.getElementById("enviar");
 const btnguardo = document.getElementById("guardar");
-/* const btnenvio = document.getElementById("enviar"); */
-
-//SE CREA EL EVENTO DEL BOTÓN GUARDAR, GUARDANDO LOS DATOS EN LOCAL STORAGE
 
 btnguardo.addEventListener("click", (e) => {
     e.preventDefault();
@@ -288,11 +285,8 @@ btnguardo.addEventListener("click", (e) => {
         D3Tunez: tunez3.value,
         D3Francia: francia3.value, 
     };
-
     datosFormulario.push(DatosFinales);
-
     localStorage.setItem("valores_de_input", JSON.stringify(datosFormulario));
-
 });
 
 /* //EVENTO DEL BOTÓN ENVIAR
